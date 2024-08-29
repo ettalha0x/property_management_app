@@ -21,7 +21,7 @@ To clone this project, run the following command:
 
 ```bash
 git clone https://github.com/ettalha0x/property_management_app.git
-cd property-management-app
+cd property-management-app/backend
 ```
 ## Building and Running the Docker Image
 Build the Docker Image:
