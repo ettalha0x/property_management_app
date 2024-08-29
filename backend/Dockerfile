@@ -21,4 +21,4 @@ COPY . /app/
 EXPOSE 8000
 
 # Run Django migrations and then start the Django development server
-CMD ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]
+CMD ["sh", "-c", "python manage.py migrate && python manage.py createsuperuser --noinput --username=admin --email=admin@example.com && python manage.py runserver 0.0.0.0:8000"]
