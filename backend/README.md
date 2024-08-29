@@ -140,5 +140,8 @@
 ## Delete a Payment (Delete)
     Endpoint: DELETE /payments/{id}/
     Description: Deletes the payment with the specified id.
+# Testing
+Use the button below to test the api in postman (ofcourse after running the containner in your local mchine)
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://speeding-crescent-671586.postman.co/collection/20442436-fe933ea0-bbb1-4534-bc3f-e7ceafe9bec2?source=rip_markdown)
 # Notes
 Ensure that the access token obtained during the login process is included in the Authorization header as a Bearer token for all protected endpoints.
