@@ -37,7 +37,7 @@ docker run -d -p 8000:8000 property-management-app
 Open your web browser and go to http://localhost:8000 to access the application.
 
 ## Testing the API
-You can test the API using tools like Postman or cURL. Refer to the [backend/README.md](https://github.com/ettalha0x/property_management_app/blob/main/README.md) file for a complete guide on the available API endpoints, their usage,   and how to authenticate using JWT tokens.
+You can test the API using tools like Postman or cURL. Refer to the [backend/README.md](https://github.com/ettalha0x/property_management_app/blob/main/backend/README.md) file for a complete guide on the available API endpoints, their usage,   and how to authenticate using JWT tokens.
 
 ## API Endpoints Guide
 The API supports CRUD operations for properties, tenants, and rental payments. Below are the base endpoints:
