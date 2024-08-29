@@ -20,7 +20,7 @@ The goal of this project is to create a simple property management application t
 To clone this project, run the following command:
 
 ```bash
-git clone https://github.com/yourusername/property-management-app.git
+git clone https://github.com/ettalha0x/property_management_app.git
 cd property-management-app
 ```
 ## Building and Running the Docker Image
@@ -36,10 +36,10 @@ docker run -d -p 8000:8000 property-management-app
 ```
 Open your web browser and go to http://localhost:8000 to access the application.
 
-Testing the API
-You can test the API using tools like Postman or cURL. Refer to the backend/README.md file for a complete guide on the available API endpoints, their usage, and how to authenticate using JWT tokens.
+## Testing the API
+You can test the API using tools like Postman or cURL. Refer to the backend/README.md file for a complete guide on the available API endpoints, their usage,   and how to authenticate using JWT tokens.
 
-API Endpoints Guide
+## API Endpoints Guide
 The API supports CRUD operations for properties, tenants, and rental payments. Below are the base endpoints:
 
 Properties: /properties/
