@@ -17,8 +17,15 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container at /app
 COPY . /app/
 
+
 # Ensure the Django server is run on the container's port 8000
 EXPOSE 8000
 
-# Run Django migrations and then start the Django development server
-CMD ["sh", "-c", "python manage.py migrate && DJANGO_SUPERUSER_PASSWORD=admin python manage.py createsuperuser --noinput --username=admin --email=admin@example.com && python manage.py runserver 0.0.0.0:8000"]
+# grant permissions to the entrypoint script
+RUN chmod +x /app/entrypoint.sh
+
+# Set the entrypoint script
+ENTRYPOINT ["/app/entrypoint.sh"]
+
+# Run the Django development server
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
